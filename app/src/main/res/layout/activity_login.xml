@@ -68,6 +68,7 @@
             </EditText>
 
             <Button
+                android:id="@+id/btn_login"
                 android:layout_marginTop="30dp"
                 android:text="LOG IN"
                 android:background="#4775d1"

@@ -10,44 +10,45 @@
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content" />-->
 
-
-
-    <item
-        android:id="@+id/menu_change_pw"
-        android:title="@string/changePassword"/>
-
-    <item
-        android:id="@+id/menu_logout"
-        android:title="@string/logout"/>
-
-    <Button
-        android:id="@+id/menu_my_orders"
-        android:text="@string/myOrder"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/menu_my_reviews"
-        android:text="@string/myReview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/menu_my_orders"
+            android:text="@string/myOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/menu_settings"
-        android:text="@string/setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/menu_my_reviews"
+            android:text="@string/myReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/menu_change_pw"
-        android:text="@string/changePassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/menu_settings"
+            android:text="@string/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-    <Button
-        android:id="@+id/menu_logout"
-        android:text="@string/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/menu_change_pw"
+            android:text="@string/changePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/menu_logout"
+            android:onClick="onLogoutButtonClick"
+            android:text="@string/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
 
 </FrameLayout>
