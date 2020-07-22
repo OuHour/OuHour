@@ -36,7 +36,7 @@ public class HomeFragment extends Fragment {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
-        loadProducts();
+//        loadProducts();
 
     }
 
@@ -46,37 +46,36 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
         return view;
     }
 
-    private void loadProducts(){
-
-        // Initialize request
-        String url = "http://ite-rupp.ap-southeast-1.elasticbeanstalk.com/products.php";
-
-        RequestQueue requestQueue = Volley.newRequestQueue(getView().getContext());
-
-        Request request = new JsonArrayRequest(Request.Method.GET ,url, null, new Response.Listener<JSONArray>() {
-            @Override
-            public void onResponse(JSONArray response) {
-
-                // Deserialize json using gson library
-                Gson gson = new Gson();
-                products = gson.fromJson(response.toString(), Product[].class);
-
-                ProductAdapter adapter = new ProductAdapter(products);
-                recyclerView.setAdapter(adapter);
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getContext(), "Load data error.", Toast.LENGTH_LONG).show();
-            }
-        });
-
-        // Add request to Queue
-        requestQueue.add(request);
-    }
+//    private void loadProducts(){
+//
+//        // Initialize request
+//        String url = "http://ite-rupp.ap-southeast-1.elasticbeanstalk.com/products.php";
+//
+//        RequestQueue requestQueue = Volley.newRequestQueue(getView().getContext());
+//
+//        Request request = new JsonArrayRequest(Request.Method.GET ,url, null, new Response.Listener<JSONArray>() {
+//            @Override
+//            public void onResponse(JSONArray response) {
+//
+//                // Deserialize json using gson library
+//                Gson gson = new Gson();
+//                products = gson.fromJson(response.toString(), Product[].class);
+//
+//                ProductAdapter adapter = new ProductAdapter(products);
+//                recyclerView.setAdapter(adapter);
+//
+//            }
+//        }, new Response.ErrorListener() {
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Toast.makeText(getContext(), "Load data error.", Toast.LENGTH_LONG).show();
+//            }
+//        });
+//
+//        // Add request to Queue
+//        requestQueue.add(request);
+//    }
 }
