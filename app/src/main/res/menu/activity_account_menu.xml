@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_my_orders"
+        android:title="@string/myOrder"/>
+
+    <item
+        android:id="@+id/menu_my_reviews"
+        android:title="@string/myReview"/>
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/setting"/>
+
+    <item
+        android:id="@+id/menu_change_pw"
+        android:title="@string/changePassword"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/logout"/>
+
+</menu>

@@ -6,7 +6,7 @@ public class Product {
     private String name;
     private String code;
     private String description;
-    private float price;
+    private int price;
     private String imageUrl;
     private int totalRate;
     private float averageRate;
@@ -46,11 +46,11 @@ public class Product {
         this.description = description;
     }
 
-    public float getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

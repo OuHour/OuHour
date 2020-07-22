@@ -1,15 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@android:color/holo_orange_dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/nav"-->
+<!--        app:menu="@menu/activity_account_menu"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" />-->
+
+
+
+    <item
+        android:id="@+id/menu_change_pw"
+        android:title="@string/changePassword"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/logout"/>
+
+    <Button
+        android:id="@+id/menu_my_orders"
+        android:text="@string/myOrder"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:text="This is Account Fragment"
-        android:textColor="@android:color/black"
-        android:textSize="30dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/menu_my_reviews"
+        android:text="@string/myReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/menu_settings"
+        android:text="@string/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/menu_change_pw"
+        android:text="@string/changePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/menu_logout"
+        android:text="@string/logout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
 </FrameLayout>

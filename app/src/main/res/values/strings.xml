@@ -6,4 +6,10 @@
     <string name="categories">Categories</string>
     <string name="search">Search</string>
     <string name="account">Account</string>
+
+    <string name="myOrder">My Orders</string>
+    <string name="myReview">My Reviews</string>
+    <string name="setting">Settings</string>
+    <string name="changePassword">Change Password</string>
+    <string name="logout">Logout</string>
 </resources>
