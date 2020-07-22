@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4775d1"
+    tools:context=".LoginActivity">
+
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:onClick="onCloseButtonClick"
+        android:src="@drawable/ic_action_close"
+        android:background="#4775d1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </ImageButton>
+
+    <RelativeLayout
+        android:background="#25488e"
+        android:layout_width="350dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_height="500dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Login"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:textSize="30dp"
+            android:textColor="@android:color/white">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:hint="Username"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="#4775d1"
+                android:textColorHint="#4775d1"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:backgroundTint="#4775d1"
+                android:hint="Password"
+                android:textColorHint="#4775d1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:text="LOG IN"
+                android:background="#4775d1"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:text="Register"
+                android:layout_alignParentBottom="true"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:text="Reset Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
